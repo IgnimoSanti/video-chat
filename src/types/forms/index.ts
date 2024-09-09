@@ -23,10 +23,12 @@ export const SignUpValidationSchema = z.object({
   .max(20, "Max length is 20 chars"),
 })
 export const SignInValidationSchema = z.object({
-  email: z.string().email('Invalid email!'),
+  email: z
+  .string()
+  .email('Invalid email!'),
   password: z
   .string()
-  .min(5, "Min length is 5 chars !")
+  .min(5, "Min length is 5 chars!")
   .max(20, "Max length is 20 chars"),
 })
 
