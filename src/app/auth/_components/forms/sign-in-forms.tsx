@@ -60,7 +60,6 @@ export default function SignInForm() {
         <div className="mt-3 text-sm text-secondary">
           {"Don't have an account?"}
           <Link href="/auth/sign-up" className="coursor-pointer text-blue-500">
-            {" "}
             Sign up
           </Link>
         </div>
